@@ -55,7 +55,7 @@
         }
 
         .bg-animation::after {
-            content: '';
+            
             position: absolute;
             width: 400px;
             height: 400px;
