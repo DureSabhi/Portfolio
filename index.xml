@@ -55,7 +55,7 @@
         }
 
         .bg-animation::after {
-            
+            content: '';
             position: absolute;
             width: 400px;
             height: 400px;
@@ -151,11 +151,14 @@
             padding: 5px;
             margin: 0 auto 2rem;
             animation: pulse 3s infinite;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            font-weight: bold;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            background: var(--bg-card);
         }
 
         @keyframes pulse {
@@ -620,11 +623,13 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <a href="https://github.com/DureSabhi/Portfolio/blob/main/WhatsApp%20Image%202025-11-12%20at%203.41.06%20PM.jpeg?raw=true"  class="profile-img">DS</div>
+            <div class="profile-img">
+                <img src="https://via.placeholder.com/200" alt="Muhammad Dur E Sabhi">
+            </div>
             <h1>Muhammad Dur E Sabhi</h1>
             <p class="tagline">Full-Stack SEO Expert & WordPress Developer</p>
             <p class="hero-description">
-                An SEO specialist and digital marketer skilled in on-page and off-page SEO, backlink creation, and WordPress optimization. Focused on improving website visibility, increasing organic traffic, and delivering measurable growth for clients.
+                Muhammad Dur E Sabhi is an SEO specialist and digital marketer skilled in on-page and off-page SEO, backlink creation, and WordPress optimization. He focuses on improving website visibility, increasing organic traffic, and delivering measurable growth for clients.
             </p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/dure-sabhi-3bba602b1/" target="_blank" title="LinkedIn">in</a>
@@ -642,7 +647,7 @@
             <div class="cert-badge fade-in">
                 <div class="cert-icon">🎓</div>
                 <h3>iSkills Certified</h3>
-                <p style="color: var(--text-secondary); margin-top: 0.5rem;">Batch SEBT-13</p>
+                <p style="color: var(--text-secondary); margin-top: 0.5rem;">Batch SEBT-14</p>
                 <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 0.9rem;">Professional SEO & Digital Marketing Certification</p>
             </div>
         </div>
@@ -691,13 +696,69 @@
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            
-            <!-- Project 1: Spotify Mod APK -->
+
+            <!-- Project 1: Check Qatar Visa -->
+            <div class="project-card fade-in">
+                <div class="project-content">
+                    <h3>Check Qatar Visa</h3>
+                    <p>Successfully developed and ranked a Qatar visa information website from scratch, achieving a Domain Rating (DR) of 19 and generating over 5,000 monthly organic visitors through effective SEO strategies and content optimization.</p>
+                    <div class="project-tags">
+                        <span class="tag">On-Page SEO</span>
+                        <span class="tag">Off-Page SEO</span>
+                        <span class="tag">Technical SEO</span>
+                        <span class="tag">Content Optimization</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <div class="stat-value">5K+</div>
+                            <div class="stat-label">Monthly Organic Visitors</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">DR 19</div>
+                            <div class="stat-label">Domain Rating</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">#4</div>
+                            <div class="stat-label">Ranking Position</div>
+                        </div>
+                    </div>
+                    <p><strong>Achievement:</strong> Ranked on the 4th position for target keywords through complete SEO optimization.</p>
+                    <a href="https://checkqatarvisa.com" target="_blank" class="project-link">Visit Website →</a>
+                </div>
+            </div>
+
+            <!-- Project 2: Perfekte Losungen -->
+            <div class="project-card fade-in">
+                <div class="project-content">
+                    <h3>Perfekte Losungen</h3>
+                    <p>Optimized the local business website perfekte-losungen.com through a complete site audit, GMB optimization, citation building, and off-page SEO. Successfully improved the site’s overall health, resolved technical issues, and enhanced its local search visibility and ranking performance.</p>
+                    <div class="project-tags">
+                        <span class="tag">Site Audit</span>
+                        <span class="tag">GMB Optimization</span>
+                        <span class="tag">Citation Building</span>
+                        <span class="tag">Off-Page SEO</span>
+                        <span class="tag">Local SEO</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <div class="stat-value">✓</div>
+                            <div class="stat-label">Improved Site Health</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">✓</div>
+                            <div class="stat-label">Technical Issues Resolved</div>
+                        </div>
+                    </div>
+                    <p><strong>Achievement:</strong> Enhanced local search visibility and fixed critical technical SEO issues.</p>
+                    <a href="https://perfekte-losungen.com/" target="_blank" class="project-link">Visit Website →</a>
+                </div>
+            </div>
+
+            <!-- Project 3: Spotify Mod APK -->
             <div class="project-card fade-in">
                 <div class="project-content">
                     <h3>Spotify Mod APK</h3>
-                    <p>Successfully developed and ranked a Spotify Mod APK website from scratch, achieving a Domain Rating (DR) of 34 and generating over 1.1 million monthly organic visitors through comprehensive SEO strategies.</p>
-                    
+                    <p>Successfully developed and ranked a Spotify Mod APK website from scratch, achieving a Domain Rating (DR) of 34 and generating over 1.1M monthly organic visitors through effective SEO strategies and content optimization.</p>
                     <div class="project-tags">
                         <span class="tag">On-Page SEO</span>
                         <span class="tag">Off-Page SEO</span>
@@ -705,7 +766,6 @@
                         <span class="tag">Content Optimization</span>
                         <span class="tag">Link Building</span>
                     </div>
-
                     <div class="project-stats">
                         <div class="stat">
                             <div class="stat-value">1.1M+</div>
@@ -720,75 +780,8 @@
                             <div class="stat-label">Ranking Position</div>
                         </div>
                     </div>
-
-                    <p><strong>Achievement:</strong> Ranked #1 for target keywords through complete on-page, off-page, and technical SEO optimization from scratch.</p>
-
+                    <p><strong>Achievement:</strong> Ranked on the 1st position for target keywords through complete SEO optimization from scratch.</p>
                     <a href="https://spotiffyapk.com/" target="_blank" class="project-link">Visit Website →</a>
-                </div>
-            </div>
-
-            <!-- Project 2: Check Qatar Visa -->
-            <div class="project-card fade-in">
-                <div class="project-content">
-                    <h3>Check Qatar Visa</h3>
-                    <p>Successfully developed and ranked a Qatar visa information website from scratch, achieving a Domain Rating (DR) of 19 and generating over 5,000 monthly organic visitors through effective SEO strategies and content optimization.</p>
-                    
-                    <div class="project-tags">
-                        <span class="tag">On-Page SEO</span>
-                        <span class="tag">Off-Page SEO</span>
-                        <span class="tag">Technical SEO</span>
-                        <span class="tag">Content Strategy</span>
-                    </div>
-
-                    <div class="project-stats">
-                        <div class="stat">
-                            <div class="stat-value">5K+</div>
-                            <div class="stat-label">Monthly Organic Visitors</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-value">DR 19</div>
-                            <div class="stat-label">Domain Rating (Ahrefs)</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-value">#4</div>
-                            <div class="stat-label">Ranking Position</div>
-                        </div>
-                    </div>
-
-                    <p><strong>Achievement:</strong> Ranked #4 for target keywords through comprehensive on-page, off-page, and technical SEO optimization.</p>
-
-                    <a href="https://checkqatarvisa.com" target="_blank" class="project-link">Visit Website →</a>
-                </div>
-            </div>
-
-            <!-- Project 3: Perfekte Losungen -->
-            <div class="project-card fade-in">
-                <div class="project-content">
-                    <h3>Perfekte Losungen</h3>
-                    <p>Optimized the local business website through a complete site audit, GMB optimization, citation building, and off-page SEO. Successfully improved the site's overall health, resolved technical issues, and enhanced its local search visibility and ranking performance.</p>
-                    
-                    <div class="project-tags">
-                        <span class="tag">Site Audit</span>
-                        <span class="tag">GMB Optimization</span>
-                        <span class="tag">Citation Building</span>
-                        <span class="tag">Off-Page SEO</span>
-                        <span class="tag">Local SEO</span>
-                    </div>
-
-                    <div class="project-stats">
-                        <div class="stat">
-                            <div class="stat-value">✓</div>
-                            <div class="stat-label">Improved Site Health</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-value">✓</div>
-                            <div class="stat-label">Technical Issues Resolved</div>
-                        </div>
-                    </div>
-
-                    <p><strong>Achievement:</strong> Enhanced local search visibility and resolved critical technical SEO issues through comprehensive site audit and optimization.</p>
-
-                    <a href="https://perfekte-losungen.com/" target="_blank" class="project-link">Visit Website →</a>
                 </div>
             </div>
         </div>
@@ -859,8 +852,54 @@
                     <div class="quote-icon">"</div>
                     <div class="stars">★★★★★</div>
                     <p class="testimonial-text">
-                        "Working with Sabhi was a game-changer for our local business. His GMB optimization and citation building strategies helped us rank #1 in local search. Professional, knowledgeable, and delivers results!"
+                        "Working with Muhammad Dur E Sabhi was a game-changer for our local business. His GMB optimization and citation building strategies helped us rank #1 in local search. Professional, knowledgeable, and delivers results!"
                     </p>
                     <div class="testimonial-author">
                         <div class="author-avatar">FH</div>
-                        
+                        <div class="author-info">
+                            <h4>Fatima Hassan</h4>
+                            <p>Restaurant Owner, Karachi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone / WhatsApp</h3>
+                    <a href="https://wa.me/923156080001" target="_blank">+92 315 6080001</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:duresabhi6@gmail.com">duresabhi6@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🌍</div>
+                    <h3>Location</h3>
+                    <p>Multan, Pakistan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Muhammad Dur E Sabhi. All Rights Reserved.</p>
+            <div class="social-links" style="justify-content: center; margin-top: 1rem;">
+                <a href="https://www.linkedin.com/in/dure-sabhi-3bba602b1/" target="_blank" title="LinkedIn">in</a>
+                <a href="https://www.upwork.com/freelancers/~0149a8b81e785e8706" target="_blank" title="Upwork">↑</a>
+                <a href="https://web.facebook.com/dure.sabhi.2025" target="_blank" title="Facebook">f</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
